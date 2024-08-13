@@ -1,6 +1,6 @@
 {
-  "name": "x-asena",
-  "version": "2.0.1",
+  "name": "SLG",
+  "version": "1.0.0",
   "description": "Whatsapp Bot",
   "main": "index.js",
   "directories": {
