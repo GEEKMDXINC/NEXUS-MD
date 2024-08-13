@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Whatsapp Bot",
   "main": "index.js",
+  "main": "pcode.js",
   "directories": {
     "lib": "lib"
   },
