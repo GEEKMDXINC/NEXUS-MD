@@ -5,7 +5,7 @@ command(
     pattern: "fd",
     fromMe: isPrivate,
     desc: "Forwards the replied Message",
-    type: "Util",
+    type: "tool",
   },
   async (message, match, m) => {
     if(!m.quoted) return message.reply('Reply to something') 
