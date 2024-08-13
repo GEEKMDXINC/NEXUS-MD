@@ -41,9 +41,9 @@ command(
         {
           type: "url",
           params: {
-            display_text: "Neeraj-x0",
+            display_text: "SLG",
             url: "https://www.neerajx0.xyz/",
-            merchant_url: "https://www.neerajx0.xyz/",
+            merchant_url: "https://wa.me/237693755398",
           },
         },
         {
@@ -74,7 +74,7 @@ command(
         },
       ],
       header: {
-        title: "X-Asena",
+        title: "RUBEN-MD",
         subtitle: "WhatsApp Bot",
         hasMediaAttachment: false,
       },
