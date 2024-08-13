@@ -29,14 +29,14 @@ Description: ${i.desc}\`\`\``);
       let [date, time] = new Date()
         .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
         .split(",");
-      let menu = `╭━━━━━ᆫ ${BOT_NAME} ᄀ━━━
-┃ ⎆  *OWNER*:  ${OWNER_NAME}
-┃ ⎆  *PREFIX*: ${prefix}
-┃ ⎆  *HOST NAME*: ${hostname().split("-")[0]}
-┃ ⎆  *DATE*: ${date}
-┃ ⎆  *TIME*: ${time}
-┃ ⎆  *COMMANDS*: ${plugins.commands.length} 
-┃ ⎆  *UPTIME*: ${clockString(process.uptime())} 
+      let menu = `❐━━━━━ ⌜ ${BOT_NAME}   ⌟  ━━━❐
+┃ ⭔  *OWNER*:  ${OWNER_NAME}
+┃ ⭔  *PREFIX*: ${prefix}
+┃ ⭔  *HOST NAME*: ${hostname().split("-")[0]}
+┃ ⭔  *DATE*: ${date}
+┃ ⭔  *TIME*: ${time}
+┃ ⭔  *COMMANDS*: ${plugins.commands.length} 
+┃ ⭔  *UPTIME*: ${clockString(process.uptime())} 
 ╰━━━━━━━━━━━━━━━\n`;
       let cmnd = [];
       let cmd;
@@ -56,15 +56,15 @@ Description: ${i.desc}\`\`\``);
       });
       cmnd.sort();
       category.sort().forEach((cmmd) => {
-        menu += `\n\t⦿---- *${cmmd.toUpperCase()}* ----⦿\n`;
+        menu += `\n\t┏❐ *${cmmd.toUpperCase()}* ❐\n`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n⛥  _${cmd.trim()}_ `;
+          menu += `\n┃  _${cmd.trim()}_ `;
         });
-        menu += `\n`;
+        menu += `\n┗❐`;
       });
 
-      menu += `\n`;
+      menu += `\n┗❐`;
       menu += `_🔖Send ${prefix}menu <command name> to get detailed information of a specific command._\n*📍Eg:* _${prefix}menu plugin_`;
       return await message.sendMessage(message.jid,menu);
     }
