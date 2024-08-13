@@ -25,7 +25,7 @@ module.exports = {
     process.env.SUDO || "237693755398,237696944333,237676247110,237620857930",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
-  OWNER_NAME: process.env.OWNER_NAME || "Neeraj-X0",
+  OWNER_NAME: process.env.OWNER_NAME || "SLG",
   HEROKU: toBool(process.env.HEROKU) || false,
   BOT_NAME: process.env.BOT_NAME || "*ANDREAS-MD*",
   AUTO_READ: toBool(process.env.AUTO_READ) || false,
