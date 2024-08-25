@@ -1,11 +1,16 @@
+
 {
   "name": "SLG",
   "version": "1.0.0",
   "description": "Whatsapp Bot",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "directories": {
     "lib": "lib"
   },
+  
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@google/generative-ai": "^0.5.0",
